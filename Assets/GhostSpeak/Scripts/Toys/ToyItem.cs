@@ -22,7 +22,11 @@ public class ToyItem : MonoBehaviour
     public void OnClick()
     {
         Ghost ghost = FindObjectOfType<Ghost>();
+        DiscoveredWordList wordList = FindObjectOfType<DiscoveredWordList>();
 
-        ghost.ThisIsTextBox.ShowBox(ghost.Alphabet.ToBooString(Name), 5f);
+        string booWord = ghost.Alphabet.ToBooString(Name);
+        wordList.AddWord(Name, booWord);
+
+        ghost.ThisIsTextBox.ShowBox(booWord, 5f);
     }
 }

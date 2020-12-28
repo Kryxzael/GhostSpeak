@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework.Constraints;
 
+[RequireComponent(typeof(Camera))]
 [AddComponentMenu("Camera-Control/Camera Controller")]
 public class CameraControl : MonoBehaviour
 {
+    private Camera _cam;
+
     public float turnSpeed = 4.0f;
-    public float moveSpeed = 2.0f;
 
     public float minTurnAngleHori = -90.0f;
     public float maxTurnAngleHori = 90.0f;
@@ -18,15 +20,22 @@ public class CameraControl : MonoBehaviour
     private float rotX;
     private float rotY;
 
+    public float ZoomedFOV = 30f;
+    public float NormalFOV = 60f;
+
+    public bool IsZoomed;
+
+
     private void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        _cam = GetComponent<Camera>();
     }
 
     void Update()
     {
         MouseAiming();
-        KeyboardMovement();
+        Zooming();
     }
 
     void MouseAiming()
@@ -43,17 +52,41 @@ public class CameraControl : MonoBehaviour
         transform.eulerAngles = new Vector3(-rotX, rotY, 0);
     }
 
-    void KeyboardMovement()
+    void Zooming()
     {
-        Vector3 dir = new Vector3(
-            x: Input.GetAxis("Horizontal"),
-            y: 0,
-            z: Input.GetAxis("Vertical")
-        );
+        if (Input.GetButtonDown("Zoom"))
+        {
+            StopAllCoroutines();
 
-        dir.x = Input.GetAxis("Horizontal");
-        dir.z = Input.GetAxis("Vertical");
+            if (IsZoomed)
+            {
+                StartCoroutine(zoomOut());
+            }
+            else
+            {
+                
+                StartCoroutine(zoomIn());
+            }
+        }
 
-        transform.Translate(dir * moveSpeed * Time.deltaTime);
+        IEnumerator zoomIn()
+        {
+            IsZoomed = true;
+            while (_cam.fieldOfView > ZoomedFOV)
+            {
+                _cam.fieldOfView--;
+                yield return new WaitForEndOfFrame();
+            }
+        }
+
+        IEnumerator zoomOut()
+        {
+            IsZoomed = false;
+            while (_cam.fieldOfView < NormalFOV)
+            {
+                _cam.fieldOfView++;
+                yield return new WaitForEndOfFrame();
+            }
+        }
     }
 }
