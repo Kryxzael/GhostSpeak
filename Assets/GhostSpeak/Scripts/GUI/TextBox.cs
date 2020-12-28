@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +26,11 @@ public class TextBox : MonoBehaviour
     public TextMeshProUGUI ContentLabel;
 
     /// <summary>
+    /// The container that contains the box
+    /// </summary>
+    public GameObject Container;
+
+    /// <summary>
     /// The text that will be displayed on the header
     /// </summary>
     public string HeaderText;
@@ -33,10 +40,18 @@ public class TextBox : MonoBehaviour
     /// </summary>
     public string ContentText;
 
+    /// <summary>
+    /// Will this text box be hidden by default?
+    /// </summary>
+    public bool HideByDefault;
+
     private void Awake()
     {
         HeaderLabel.text = HeaderText;
         ContentLabel.text = ContentText;
+
+        if (HideByDefault)
+            Container.SetActive(false);
     }
 
     public void SetHeader(string text)
@@ -49,5 +64,26 @@ public class TextBox : MonoBehaviour
     {
         ContentText = text;
         ContentLabel.text = text;
+    }
+
+    public void ShowBox(string content, float duration = 2.5f)
+    {
+        ShowBox(HeaderText, content, duration);
+    }
+
+    public void ShowBox(string header, string content, float duration = 2.5f)
+    {
+        StartCoroutine(co());
+
+        IEnumerator co()
+        {
+            Container.SetActive(true);
+            SetHeader(header);
+            SetContent(content);
+
+            yield return new WaitForSeconds(duration);
+
+            Container.SetActive(false);
+        }
     }
 }

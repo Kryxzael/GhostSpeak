@@ -16,13 +16,13 @@ public class ToyItem : MonoBehaviour
 
     private void Start()
     {
-        Label.text = Name;
+        //Label.text = Name;
     }
 
     public void OnClick()
     {
         Ghost ghost = FindObjectOfType<Ghost>();
 
-        ghost.ThisIsTextBox.SetContent(ghost.Alphabet.ToBooString(Name));
+        ghost.ThisIsTextBox.ShowBox(ghost.Alphabet.ToBooString(Name), 5f);
     }
 }
