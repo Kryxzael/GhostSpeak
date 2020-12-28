@@ -73,6 +73,7 @@ public class TextBox : MonoBehaviour
 
     public void ShowBox(string header, string content, float duration = 2.5f)
     {
+        StopAllCoroutines();
         StartCoroutine(co());
 
         IEnumerator co()

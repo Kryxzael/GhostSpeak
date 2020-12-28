@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using UnityEngine;
+
 /// <summary>
 /// Represents an alphabet in ghost language and provides translation services between Latin and boo letters
 /// </summary>

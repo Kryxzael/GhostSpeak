@@ -25,8 +25,8 @@ public class ToyItem : MonoBehaviour
         DiscoveredWordList wordList = FindObjectOfType<DiscoveredWordList>();
 
         string booWord = ghost.Alphabet.ToBooString(Name);
-        wordList.AddWord(Name, booWord);
+        wordList?.AddWord(Name, booWord);
 
-        ghost.ThisIsTextBox.ShowBox(booWord, 5f);
+        ghost.ThisIsTextBox.ShowBox("<b>" + Name + "</b>" + Environment.NewLine + booWord, float.MaxValue);
     }
 }
