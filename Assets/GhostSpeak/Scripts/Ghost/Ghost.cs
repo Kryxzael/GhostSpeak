@@ -12,9 +12,7 @@ public class Ghost : MonoBehaviour
 {
     public static readonly string[] AVAILABLE_WORDS =
     {
-        "Banansjokolade",
-        "Bamsemoms",
-        "Smil"
+        "Test",
     };
 
     public string TargetWord;
