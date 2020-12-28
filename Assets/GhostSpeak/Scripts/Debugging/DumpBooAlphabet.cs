@@ -14,7 +14,7 @@ public class DumpBooAlphabet : MonoBehaviour
 
     private void Start()
     {
-        BooAlphabet alpha = new BooAlphabet(new System.Random());
+        BooAlphabet alpha = new BooAlphabet();
 
         string output = "";
         foreach (var i in alpha.Mappings)

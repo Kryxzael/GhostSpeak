@@ -14,32 +14,32 @@ public class BooAlphabet
     /// </summary>
     private static readonly string[] AVAILABLE_BOOS =
     {
-        "BOO",
-        "BHO",
-        "BWO",
-        "BUU",
-        "BUO",
-        "OOH",
-        "OOO",
-        "OUO",
-        "OEE",
-        "HUU",
-        "HOU",
-        "HOO",
-        "HUE",
-        "UUU",
-        "UHU",
-        "UHH",
-        "UEE",
-        "UUO",
-        "WHO",
-        "WOO",
-        "WUU",
-        "WHU",
-        "EEE",
-        "EEO",
-        "EEU",
-        "EUU"
+        "Boo",
+        "Bho",
+        "Bwo",
+        "Buu",
+        "Buo",
+        "Ooh",
+        "Ooo",
+        "Ouo",
+        "Oee",
+        "Huu",
+        "Hou",
+        "Hoo",
+        "Hue",
+        "Uuu",
+        "Uhu",
+        "Uhh",
+        "Uee",
+        "Uuo",
+        "Who",
+        "Woo",
+        "Wuu",
+        "Whu",
+        "Eee",
+        "Eeo",
+        "Eeu",
+        "Euu"
     };
 
     /// <summary>
@@ -51,13 +51,13 @@ public class BooAlphabet
     /// Creates a new boo alphabet
     /// </summary>
     /// <param name="rng"></param>
-    public BooAlphabet(Random rng)
+    public BooAlphabet()
     {
         IEnumerable<char> letters = Enumerable.Range((int)'A', (int)'Z')
             .Select(i => (char)i);
 
         IEnumerable<string> boos = AVAILABLE_BOOS
-            .OrderBy(i => rng.Next());
+            .OrderBy(i => UnityEngine.Random.value);
 
         Mappings = letters.Zip(
             second: boos,
