@@ -1,9 +1,11 @@
 ::intro
 	@ghost
+	/normal
 	Hey buddy!
 	-
 	
 	@ghost
+	/surprised
 	Wow! That thunder outside is 
 	really scary, huh?
 	> N-no! -> notScary
@@ -12,14 +14,18 @@
 	
 ::notScary
 	@ghost
+	/angry
 	Well, I think it's super scary...
 	-
 	
 	@ghost
+	/normal
 	When I'm scared I don't 
 	like to be alone
 	-
 	
+	@ghost
+	/happy
 	Do you want to play a game with me?
 	> I do! -> play
 	> Not really... -> comeOn
@@ -27,20 +33,24 @@
 	
 ::scary
 	@ghost
+	/happy
 	I'm so glad you agree! 
 	-
 	
 	@ghost
+	/sad
 	The other ghosts make fun of me 
 	when I say I'm scared...
 	-	
 	
 	@ghost
+	/normal
 	Hey, do you know what I like 
 	to do when I'm anxious? 
 	-
 	
 	@ghost
+	/happy
 	I like to play games. 
 	Do you want to play with me?
 	
@@ -50,6 +60,7 @@
 	
 ::comeOn
 	@ghost
+	/sad
 	Please? It's really fun
 	> No -> comeOn
 	> Okay -> play
@@ -57,6 +68,7 @@
 	
 ::play
 	@ghost
+	/happy
 	Yay! Okay! I'll teach you
 	the rules!
 	-

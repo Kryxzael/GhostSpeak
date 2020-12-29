@@ -25,6 +25,15 @@ public class Ghost : MonoBehaviour
 
     private void Awake()
     {
+        FindObjectOfType<DialogSystem>().CustomInstructions.AddRange(new[] {
+            new FaceInstruction("normal", i => i.SetNormal()),
+            new FaceInstruction("happy", i => i.SetHappy()),
+            new FaceInstruction("angry", i => i.SetAngry()),
+            new FaceInstruction("sad", i => i.SetSad()),
+            new FaceInstruction("tired", i => i.SetTired()),
+            new FaceInstruction("surprised", i => i.SetSurprised()),
+        });
+
         TargetWord = AVAILABLE_WORDS[UnityEngine.Random.Range(0, AVAILABLE_WORDS.Length)];
         Alphabet = new BooAlphabet();
         IWantTextBox.SetContent(Alphabet.ToBooString(TargetWord) + "?");

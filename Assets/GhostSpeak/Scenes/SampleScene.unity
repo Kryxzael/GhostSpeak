@@ -4488,6 +4488,30 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 8f71db49c1aa00d4d89e629f93704455, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2b6b7bd2a4a1b7488ebba13416dddf9, type: 3}
+--- !u!1 &1898315191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2515295785829576530, guid: e2b6b7bd2a4a1b7488ebba13416dddf9, type: 3}
+  m_PrefabInstance: {fileID: 1898315190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1898315192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898315191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8f2bed1b473339468e6bf345783537f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialIndex: 0
+  Normal: {fileID: 2100000, guid: a8e4c438223f33e4296ce8a68badbcc3, type: 2}
+  Sad: {fileID: 2100000, guid: 7c0b0df0d6ccc0e478f3bd5d8f939c7f, type: 2}
+  Angry: {fileID: 2100000, guid: e01f8653629534c448f844011dff263b, type: 2}
+  Happy: {fileID: 2100000, guid: 8f71db49c1aa00d4d89e629f93704455, type: 2}
+  Surprised: {fileID: 2100000, guid: 3bbc08d0209d79c43b4ee73923909e75, type: 2}
+  Tired: {fileID: 2100000, guid: 546e24c2c71ebc24ca9191155a4ca148, type: 2}
 --- !u!1 &1951338261
 GameObject:
   m_ObjectHideFlags: 0
