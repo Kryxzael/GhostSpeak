@@ -89,7 +89,7 @@ namespace Dialog
                 }
                 catch (Exception)
                 {
-                    Debug.LogWarning("Unable to instanitate custom instruction type: '" + i + "'");
+                    Debug.LogWarning("Unable to instantiate custom instruction type: '" + i + "'");
                 }
 
             }

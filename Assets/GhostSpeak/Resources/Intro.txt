@@ -73,3 +73,5 @@
 	the rules!
 	-
 	
+	/gamestate Searching
+	/bank ToyInfo

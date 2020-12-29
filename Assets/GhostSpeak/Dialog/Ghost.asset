@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Identifier: ghost
   Name: Ghost
-  SpeakSound: {fileID: 0}
+  SpeakSound: {fileID: 8300000, guid: ff0ea63473bd81b43b230fdedaa6021e, type: 3}
   DefaultTextDelay: 0.05
   DefaultPortraitIdentifier: default
   Portraits:

@@ -1,0 +1,13 @@
+::toy
+	/gamestate Inspecting
+
+	@ghost
+	/happy
+	I don't know what this is.
+	But it's cool!
+	-
+	I'm gonna call it#r
+	/boo toy
+	-
+	
+	/gamestate Searching

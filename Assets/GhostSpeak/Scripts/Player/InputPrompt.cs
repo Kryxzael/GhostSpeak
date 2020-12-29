@@ -14,13 +14,19 @@ public class InputPrompt : MonoBehaviour
 
     public string CurrentInput;
 
+    private Ghost _ghost;
+
     private void Awake()
     {
+        _ghost = FindObjectOfType<Ghost>();
         SetCurrentInput("");
     }
 
     private void Update()
     {
+        if (_ghost.GameState != GameState.Searching)
+            return;
+
         for (KeyCode i = KeyCode.A; i <= KeyCode.Z; i++)
         {
             if (Input.GetKeyDown(i))

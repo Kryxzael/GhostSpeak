@@ -11,7 +11,7 @@ using UnityEngine;
 
 public class ToyItem : MonoBehaviour
 {
-    public string Name;
+    public string DialogName;
     public TextMeshProUGUI Label;
 
     private void Start()
@@ -21,12 +21,10 @@ public class ToyItem : MonoBehaviour
 
     public void OnClick()
     {
-        Ghost ghost = FindObjectOfType<Ghost>();
-        DiscoveredWordList wordList = FindObjectOfType<DiscoveredWordList>();
+        if (FindObjectOfType<Ghost>().GameState != GameState.Searching)
+            return;
 
-        string booWord = ghost.Alphabet.ToBooString(Name);
-        wordList?.AddWord(Name, booWord);
-
-        ghost.ThisIsTextBox.ShowBox("<b>" + Name + "</b>" + Environment.NewLine + booWord, float.MaxValue);
+        FindObjectOfType<Dialog.DialogSystem>()
+            .StartDialog(DialogName);
     }
 }

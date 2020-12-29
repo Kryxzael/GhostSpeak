@@ -23,6 +23,8 @@ public class Ghost : MonoBehaviour
     public TextBox IWantTextBox;
     public TextBox ThisIsTextBox;
 
+    public GameState GameState;
+
     private void Awake()
     {
         FindObjectOfType<DialogSystem>().CustomInstructions.AddRange(new[] {
