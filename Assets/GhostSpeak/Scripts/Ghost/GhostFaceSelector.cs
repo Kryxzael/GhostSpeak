@@ -13,7 +13,6 @@ public class GhostFaceSelector : MonoBehaviour
 
     public Material Normal, Sad, Angry, Happy, Surprised, Tired;
 
-
     public void SetNormal() => SetFace(Normal);
     public void SetSad() => SetFace(Sad);
     public void SetAngry() => SetFace(Angry);
