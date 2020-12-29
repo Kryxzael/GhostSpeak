@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dialog;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -26,5 +28,13 @@ public class Ghost : MonoBehaviour
         TargetWord = AVAILABLE_WORDS[UnityEngine.Random.Range(0, AVAILABLE_WORDS.Length)];
         Alphabet = new BooAlphabet();
         IWantTextBox.SetContent(Alphabet.ToBooString(TargetWord) + "?");
+
+        TriggerInitialDialog();
+    }
+
+    public void TriggerInitialDialog()
+    {
+        DialogSystem system = FindObjectOfType<DialogSystem>();
+        system.StartDialog("intro");
     }
 }

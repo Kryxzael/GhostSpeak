@@ -1,0 +1,63 @@
+::intro
+	@ghost
+	Hey buddy!
+	-
+	
+	@ghost
+	Wow! That thunder outside is 
+	really scary, huh?
+	> N-no! -> notScary
+	> Yeah!!! -> scary
+	-
+	
+::notScary
+	@ghost
+	Well, I think it's super scary...
+	-
+	
+	@ghost
+	When I'm scared I don't 
+	like to be alone
+	-
+	
+	Do you want to play a game with me?
+	> I do! -> play
+	> Not really... -> comeOn
+	-
+	
+::scary
+	@ghost
+	I'm so glad you agree! 
+	-
+	
+	@ghost
+	The other ghosts make fun of me 
+	when I say I'm scared...
+	-	
+	
+	@ghost
+	Hey, do you know what I like 
+	to do when I'm anxious? 
+	-
+	
+	@ghost
+	I like to play games. 
+	Do you want to play with me?
+	
+	> No... -> comeOn
+	> I do! -> play
+	-
+	
+::comeOn
+	@ghost
+	Please? It's really fun
+	> No -> comeOn
+	> Okay -> play
+	-
+	
+::play
+	@ghost
+	Yay! Okay! I'll teach you
+	the rules!
+	-
+	
