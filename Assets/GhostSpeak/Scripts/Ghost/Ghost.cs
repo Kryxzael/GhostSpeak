@@ -36,11 +36,16 @@ public class Ghost : MonoBehaviour
             new FaceInstruction("surprised", i => i.SetSurprised()),
         });
 
+        TriggerInitialDialog();
+    }
+
+    public void ResetGame()
+    {
         TargetWord = AVAILABLE_WORDS[UnityEngine.Random.Range(0, AVAILABLE_WORDS.Length)];
         Alphabet = new BooAlphabet();
-        IWantTextBox.SetContent(Alphabet.ToBooString(TargetWord) + "?");
 
-        TriggerInitialDialog();
+        FindObjectOfType<InputPrompt>().SetCurrentInput("");
+        IWantTextBox.SetContent(Alphabet.ToBooString(TargetWord) + "?");
     }
 
     public void TriggerInitialDialog()

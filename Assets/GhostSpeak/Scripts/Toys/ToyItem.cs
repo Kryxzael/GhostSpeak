@@ -21,9 +21,11 @@ public class ToyItem : MonoBehaviour
 
     public void OnClick()
     {
-        if (FindObjectOfType<Ghost>().GameState != GameState.Searching)
+        Ghost ghost = FindObjectOfType<Ghost>();
+        if (ghost.GameState != GameState.Searching)
             return;
 
+        ghost.GameState = GameState.Inspecting;
         FindObjectOfType<Dialog.DialogSystem>()
             .StartDialog(DialogName);
     }

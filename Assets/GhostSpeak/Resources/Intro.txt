@@ -73,5 +73,6 @@
 	the rules!
 	-
 	
+	/resetgame
 	/gamestate Searching
 	/bank ToyInfo

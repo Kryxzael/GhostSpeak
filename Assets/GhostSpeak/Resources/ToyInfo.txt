@@ -1,6 +1,4 @@
 ::toy
-	/gamestate Inspecting
-
 	@ghost
 	/happy
 	I don't know what this is.

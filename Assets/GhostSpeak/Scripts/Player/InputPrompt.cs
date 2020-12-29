@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dialog;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -61,16 +63,18 @@ public class InputPrompt : MonoBehaviour
     public void SubmitInput()
     {
         Ghost ghost = FindObjectOfType<Ghost>();
+        DialogSystem dialog = FindObjectOfType<DialogSystem>();
+        dialog.Bank = "Outro";
 
         if (ghost.TargetWord.ToUpper() == CurrentInput.Trim())
         {
-            InputLabel.text = "Correct";
-            InputLabel.color = Color.green;
+            ghost.GameState = GameState.GuessCorrect;
+            dialog.StartDialog("correct");
         }
         else
         {
-            InputLabel.text = "Incorrect";
-            InputLabel.color = Color.red;
+            ghost.GameState = GameState.GuessIncorrect;
+            dialog.StartDialog("incorrect");
         }
 
     }

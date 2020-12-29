@@ -1,0 +1,26 @@
+::correct
+	@ghost
+	#gCorrect
+	-
+	
+	@ghost
+	Replay?
+	> Yes -> replay
+	> No -> exit
+	-
+
+::incorrect
+	@ghost
+	No! Stupid
+	-
+	
+	/gamestate Searching
+	/bank ToyInfo
+	
+::replay
+	/bank Intro
+	/gamestate Searching
+	/resetgame
+	
+::exit
+	/gotomenu
