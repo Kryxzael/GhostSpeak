@@ -72,7 +72,7 @@ public class Ghost : MonoBehaviour
         "FRENCH",
         "WEIGHT",
         "MATURE",
-    }.Where(i => i.All(i => new string[] { "DOLL", "BIRD", "KIWI", "ZEBRA", "JET", "VASE", "PHONE", "SUN", "TEDDY" }.SelectMany(i => i).Contains(i))).ToArray();
+    }.Where(i => i.All(i => new string[] { "DOLL", "BIRD", "KIWI", "ZEBRA", "JET", "VASE", "PHONE", "SUN", "TEDDY", "FOX" }.SelectMany(i => i).Contains(i))).ToArray();
 
 
 

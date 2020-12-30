@@ -7445,6 +7445,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -5.4
       objectReference: {fileID: 0}
+    - target: {fileID: 461739750337204025, guid: 4d44a0bee4cad53478caf1f3d9ca6f2f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 50.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 461739750337204025, guid: 4d44a0bee4cad53478caf1f3d9ca6f2f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 14.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 461739750337204025, guid: 4d44a0bee4cad53478caf1f3d9ca6f2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -25.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 461739750337204025, guid: 4d44a0bee4cad53478caf1f3d9ca6f2f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.29
+      objectReference: {fileID: 0}
     - target: {fileID: 864529554119132773, guid: 4d44a0bee4cad53478caf1f3d9ca6f2f, type: 3}
       propertyPath: ConfirmationSoundPlayer
       value: 
@@ -7536,6 +7552,14 @@ PrefabInstance:
     - target: {fileID: 6150945789071502116, guid: 4d44a0bee4cad53478caf1f3d9ca6f2f, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150945789329773625, guid: 4d44a0bee4cad53478caf1f3d9ca6f2f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 14.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150945789329773625, guid: 4d44a0bee4cad53478caf1f3d9ca6f2f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 6150945789329773629, guid: 4d44a0bee4cad53478caf1f3d9ca6f2f, type: 3}
       propertyPath: m_fontSize

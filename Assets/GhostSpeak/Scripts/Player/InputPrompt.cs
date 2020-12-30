@@ -71,6 +71,16 @@ public class InputPrompt : MonoBehaviour
             ghost.GameState = GameState.GuessIncorrect;
             dialog.StartDialog("blankInput");
         }
+        else if (CurrentInput.Trim().Length > ghost.TargetWord.Length)
+        {
+            ghost.GameState = GameState.GuessIncorrect;
+            dialog.StartDialog("tooLong");
+        }
+        else if (CurrentInput.Trim().Length < ghost.TargetWord.Length)
+        {
+            ghost.GameState = GameState.GuessIncorrect;
+            dialog.StartDialog("tooShort");
+        }
         else if (ghost.TargetWord.ToUpper() == CurrentInput.Trim())
         {
             ghost.GameState = GameState.GuessCorrect;

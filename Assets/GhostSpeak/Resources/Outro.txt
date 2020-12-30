@@ -1,6 +1,6 @@
 ::blankInput
 	@ghost
-	Heey. You didn' write
+	Heey. You didn't write
 	anything
 	-
 	
@@ -40,9 +40,57 @@
 	> No thanks -> exit
 	-
 
+::tooLong
+	@ghost
+	Um...
+	-
+	
+	@ghost
+	I think you have
+	too many letters
+	-
+	
+	@ghost
+	/surprised
+	#T#SOr maybe I have
+	too few.
+	-
+	
+	/normal
+	/bank ToyInfo
+	/gamestate Searching
+
+::tooShort
+	@ghost
+	Hey, I think you're
+	missing some letters
+	-
+	
+	@ghost
+	/happy
+	Make sure to find
+	everything in the room
+	-
+	
+	/normal
+	/bank ToyInfo
+	/gamestate Searching
+
 ::incorrect
 	@ghost
-	No! Stupid
+	/sad
+	Oh...
+	-
+	
+	@ghost
+	I'm sorry. 
+	That's incorrect.
+	-
+	
+	@ghost
+	/normal
+	But that's okay.
+	You can try again!
 	-
 	
 	/gamestate Searching

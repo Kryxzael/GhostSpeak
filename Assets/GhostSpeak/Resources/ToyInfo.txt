@@ -203,6 +203,8 @@
 	But I'll call it a #r
 	/boo jet
 	-
+	
+	/gamestate Searching
 
 ::toy
 	@ghost
