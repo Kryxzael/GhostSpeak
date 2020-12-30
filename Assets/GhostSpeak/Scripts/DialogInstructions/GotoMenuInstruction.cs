@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GotoMenuInstruction : CustomInstruction
@@ -17,6 +18,7 @@ public class GotoMenuInstruction : CustomInstruction
 
     public override IEnumerator Execute(DialogSystem target, Params args)
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("HovedMeny");
         yield break;
     }
