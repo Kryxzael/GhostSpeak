@@ -184,6 +184,25 @@
 	-
 	
 	/gamestate Searching
+	
+::jet
+	/happy
+	@ghost
+	Cool #rjet#w
+	-
+	
+	/normal
+	A mechanical bird!
+	-
+	
+	/sad
+	I have no idea how it works!
+	-
+	
+	/happy
+	But I'll call it a #r
+	/boo jet
+	-
 
 ::toy
 	@ghost

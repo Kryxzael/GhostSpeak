@@ -73,6 +73,40 @@
 	the rules!
 	-
 	
+	@ghost
+	Okay, so...
+	-
+	
+	@ghost
+	I'm going to talk in my 
+	native language, #rBoo-speak#w!
+	-
+	
+	@ghost
+	I'll tell you what your 
+	#rtoys#w are named in boo
+	-
+	
+	@ghost
+	Just click them
+	and I'll tell you its name
+	-
+	
+	@ghost
+	That way you can #rlearn the
+	letters#w
+	-
+	
+	@ghost
+	Then you try to #rtranslate
+	my word!#w
+	-
+	
+	@ghost
+	Okay! Let's go!
+	-
+	
+	
 	/resetgame
 	/gamestate Searching
 	/bank ToyInfo

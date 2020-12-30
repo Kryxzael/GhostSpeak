@@ -1,10 +1,12 @@
 ::blankInput
 	@ghost
-	Blank input
+	Heey. You didn' write
+	anything
 	-
 	
 	@ghost
-	Please type
+	You have to #rguess
+	the word#w
 	-
 	
 	/gamestate Searching
@@ -12,13 +14,30 @@
 
 ::correct
 	@ghost
-	#gCorrect
+	/happy
+	Woah, that’s correct! 
+	Good job, buddy!
 	-
 	
 	@ghost
-	Replay?
-	> Yes -> replay
-	> No -> exit
+	That was a hard one, huh? 
+	You did great.
+	-
+	
+	@ghost
+	Hey, listen... 
+	-
+	
+	@ghost
+	I really had fun playing 
+	this with you! 
+	-
+	
+	Do you want to play again? 
+	I’ll even make a new alphabet for you!
+	
+	> Yes! -> replay
+	> No thanks -> exit
 	-
 
 ::incorrect
@@ -30,9 +49,38 @@
 	/bank ToyInfo
 	
 ::replay
+	@ghost
+	/happy
+	Yay! I'll choose a new word
+	and make a new alphabet
+	-
+	
+	@ghost
+	/tired
+	Hmm..
+	-
+	
+	@ghost
+	/happy
+	Okay! Got it!
+	-
+	
 	/bank Intro
 	/gamestate Searching
 	/resetgame
 	
 ::exit
+	@ghost
+	/sad
+	Oh...
+	-
+	
+	@ghost
+	Okay. Until next time
+	-
+	
+	@ghost
+	/happy
+	Bye bye!
+	-
 	/gotomenu

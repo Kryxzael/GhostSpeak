@@ -12,10 +12,69 @@ using UnityEngine;
 
 public class Ghost : MonoBehaviour
 {
-    public static readonly string[] AVAILABLE_WORDS =
+    public static readonly string[] AVAILABLE_WORDS = new[]
     {
-        "Test",
-    };
+        "NUMBER",
+        "PEOPLE",
+        "BEFORE",
+        "RACING",
+        "ACORNS",
+        "QUICK",
+        "JUMBO",
+        "ADMIT",
+        "CAMERA",
+        "DECADE",
+        "FLYING",
+        "NATURE",
+        "PLANET",
+        "CABLE",
+        "EMPTY",
+        "HORSE",
+        "NURSE",
+        "RADIO",
+        "SMILE",
+        "THICK",
+        "UNION",
+        "TRUTH",
+        "YOUNG",
+        "RIVAL",
+        "PRIZE",
+        "NOISE",
+        "MOVIE",
+        "RANDOM",
+        "PHRASE",
+        "ORGIN",
+        "MEDIUM",
+        "MARKET",
+        "GROUND",
+        "FACTOR",
+        "ESCAPE",
+        "DOCTOR",
+        "CREDIT",
+        "BUDGET",
+        "AVENUE",
+        "ADVISE",
+        "ACTION",
+        "BEAUTY",
+        "MOUNT",
+        "PAINT",
+        "CENTER",
+        "COUNTY",
+        "PLANT",
+        "REACH",
+        "PRIME",
+        "SCALE",
+        "SINCE",
+        "LIQUID",
+        "SUGAR",
+        "FACING",
+        "WAXING",
+        "FRENCH",
+        "WEIGHT",
+        "MATURE",
+    }.Where(i => i.All(i => new string[] { "DOLL", "BIRD", "KIWI", "ZEBRA", "JET", "VASE", "PHONE", "SUN", "TEDDY" }.SelectMany(i => i).Contains(i))).ToArray();
+
+
 
     public string TargetWord;
     public BooAlphabet Alphabet;
