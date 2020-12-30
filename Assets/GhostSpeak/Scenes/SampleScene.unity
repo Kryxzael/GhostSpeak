@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6a69e45833d5b41a38ce5ab6cc20bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogName: toy
+  DialogName: zebra
   Label: {fileID: 0}
 --- !u!65 &130116985
 BoxCollider:
@@ -1193,7 +1193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6a69e45833d5b41a38ce5ab6cc20bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogName: toy
+  DialogName: teddy
   Label: {fileID: 0}
 --- !u!65 &344928924
 BoxCollider:
@@ -1410,7 +1410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6a69e45833d5b41a38ce5ab6cc20bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogName: toy
+  DialogName: sun
   Label: {fileID: 0}
 --- !u!65 &486059620
 BoxCollider:
@@ -2347,7 +2347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6a69e45833d5b41a38ce5ab6cc20bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogName: toy
+  DialogName: bird
   Label: {fileID: 0}
 --- !u!1 &813944246
 GameObject:
@@ -2757,6 +2757,33 @@ MonoBehaviour:
   IWantTextBox: {fileID: 102256684}
   ThisIsTextBox: {fileID: 406026925}
   GameState: 0
+--- !u!65 &938246198
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938246194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3699362, y: 4.335261, z: 1}
+  m_Center: {x: 0.081266135, y: 2.2782733, z: -2.6882196e-10}
+--- !u!114 &938246199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938246194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa6a69e45833d5b41a38ce5ab6cc20bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogName: ghost
+  Label: {fileID: 0}
 --- !u!1 &942690289
 GameObject:
   m_ObjectHideFlags: 0
@@ -3340,7 +3367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6a69e45833d5b41a38ce5ab6cc20bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogName: toy
+  DialogName: doll
   Label: {fileID: 0}
 --- !u!65 &1063299532
 BoxCollider:
@@ -4835,7 +4862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6a69e45833d5b41a38ce5ab6cc20bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogName: toy
+  DialogName: kiwi
   Label: {fileID: 0}
 --- !u!65 &1514461896
 BoxCollider:
@@ -5419,7 +5446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6a69e45833d5b41a38ce5ab6cc20bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogName: toy
+  DialogName: fox
   Label: {fileID: 0}
 --- !u!65 &1710241871
 BoxCollider:

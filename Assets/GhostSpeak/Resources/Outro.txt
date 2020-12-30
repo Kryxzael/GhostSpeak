@@ -1,3 +1,15 @@
+::blankInput
+	@ghost
+	Blank input
+	-
+	
+	@ghost
+	Please type
+	-
+	
+	/gamestate Searching
+	/bank ToyInfo
+
 ::correct
 	@ghost
 	#gCorrect

@@ -1,3 +1,190 @@
+::kiwi
+	@ghost
+	/surprised
+	Is that... ~#rKiwi#w?~
+	Ew... ~It's half eaten
+	-
+	
+	@ghost
+	/normal
+	I'd call that a #r
+	/boo Kiwi
+	-
+	
+	/gamestate Searching
+	
+::teddy
+	@ghost
+	/happy
+	Ooooh.^ That's #rTeddy#w
+	-
+	
+	@ghost
+	It's the softest!~
+	Grandma made him
+	-
+	
+	@ghost
+	His name is #r
+	/boo Teddy
+	-
+	
+	/gamestate Searching
+	
+::fox
+	@ghost
+	/normal
+	That's a #rfox#w
+	-
+	
+	@ghost
+	/sad
+	Foxes can be scary
+	-
+	
+	@ghost
+	/happy
+	But not this one.^
+	This one is nice
+	-
+	
+	@ghost
+	It's name is #r
+	/boo Fox
+	-
+	
+	/gamestate Searching
+	
+::bird
+	@ghost
+	/happy
+	Wow, a #rbird#w!
+	-
+	
+	@ghost
+	Birds can fly^ #Iand#R^ walk.
+	Some can even swim.
+	-
+	
+	@ghost
+	I'm gonna call it a #r
+	/boo Bird
+	-
+	
+	/gamestate Searching
+
+::sun
+	@ghost
+	/normal
+	That's the #rsun#w
+	Well... not^ #Ithe#R^ sun
+	-
+	
+	@ghost
+	/surprised
+	It's so big!
+	And without it, we'll die
+	-
+	
+	@ghost
+	/normal
+	I^ think.
+	-
+	
+	@ghost
+	I'm calling it a #r
+	/boo Sun
+	-
+	
+	/gamestate Searching
+
+::vase
+	@ghost
+	/normal
+	That is a nice #rvase#w
+	-
+	
+	@ghost
+	It can contain things. 
+	Like flowers, or ashes.
+	-
+	
+	@ghost
+	It's a #r
+	/boo Vase
+	-
+	
+	/gamestate Searching
+	
+::zebra
+	@ghost
+	/normal
+	That animal is
+	a #rzebra#w
+	-
+	
+	@ghost
+	/happy
+	It's like a horse^
+	but twice as cool
+	-
+	
+	@ghost
+	The zebra's name is #r
+	/boo Zebra
+	-
+	
+	/gamestate Searching
+	
+::phone
+	@ghost
+	/normal
+	That's your #rphone#w
+	-
+	
+	@ghost
+	/happy
+	You can call your mom,
+	and play Minecraft on it!
+	-
+	
+	@ghost
+	Beep boop #r
+	/boo Phone
+	-
+	
+	/gamestate Searching
+
+::doll
+	@ghost
+	/surprised
+	That's your #rdoll#w
+	-
+	
+	@ghost
+	This one...^ 
+	We don't talk about^ her...
+	-
+	
+	@ghost
+	Let's call it #r
+	/boo Doll
+	-
+	
+	/gamestate Searching
+
+::ghost
+	@ghost
+	/happy
+	Hey! That's me
+	-
+	
+	/angry
+	No cheating!
+	-
+	
+	/gamestate Searching
+
 ::toy
 	@ghost
 	/happy

@@ -66,7 +66,12 @@ public class InputPrompt : MonoBehaviour
         DialogSystem dialog = FindObjectOfType<DialogSystem>();
         dialog.Bank = "Outro";
 
-        if (ghost.TargetWord.ToUpper() == CurrentInput.Trim())
+        if (string.IsNullOrWhiteSpace(CurrentInput))
+        {
+            ghost.GameState = GameState.GuessIncorrect;
+            dialog.StartDialog("blankInput");
+        }
+        else if (ghost.TargetWord.ToUpper() == CurrentInput.Trim())
         {
             ghost.GameState = GameState.GuessCorrect;
             dialog.StartDialog("correct");
