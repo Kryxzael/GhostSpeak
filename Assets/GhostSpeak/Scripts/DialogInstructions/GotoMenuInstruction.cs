@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using UnityEngine.SceneManagement;
+
 public class GotoMenuInstruction : CustomInstruction
 {
     public override string Name { get; } = "gotomenu";
@@ -15,6 +17,7 @@ public class GotoMenuInstruction : CustomInstruction
 
     public override IEnumerator Execute(DialogSystem target, Params args)
     {
-        throw new NotImplementedException("Pretend that you are now at the main menu");
+        SceneManager.LoadScene("HovedMeny");
+        yield break;
     }
 }

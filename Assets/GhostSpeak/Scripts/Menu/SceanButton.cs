@@ -8,7 +8,7 @@ public class SceanButton : MonoBehaviour
 {
     public void OnClickPlay()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("VideoScene");
     }
 
     public void OnClickQuit()

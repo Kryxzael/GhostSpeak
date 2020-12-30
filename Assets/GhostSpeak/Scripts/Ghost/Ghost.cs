@@ -45,7 +45,7 @@ public class Ghost : MonoBehaviour
         Alphabet = new BooAlphabet();
 
         FindObjectOfType<InputPrompt>().SetCurrentInput("");
-        IWantTextBox.SetContent(Alphabet.ToBooString(TargetWord) + "?");
+        IWantTextBox.ShowBox(Alphabet.ToBooString(TargetWord) + "?", float.PositiveInfinity);
     }
 
     public void TriggerInitialDialog()

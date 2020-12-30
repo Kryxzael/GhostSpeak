@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GhostSpeak/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/GhostSpeak/Scenes/VideoScene.unity
+    guid: ab764819a08f06940a45cf481820f020
   m_configObjects: {}
